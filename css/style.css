@@ -89,20 +89,22 @@
 }
  .createProject{
     width: 158px;
+    height: 36px;
     background: #ECECEC;
     border-radius: 8px;
     border: none;
     display: flex;
     align-items: center;
-    justify-content: start;
     margin-right: 12px;
 }
 .createIcon{
-    margin-left: 13px;
+    margin-left: 13px;   
+}
+.createIcon span{
+    font-size: 15px;
 }
 .createText{
     margin-left: 9px;
-    font-size: 16px;
 }
 .createText span{
     font-family: 'Roboto';
@@ -123,21 +125,25 @@
     align-items: center;
 }
 .searchIcon{ 
-    margin-left: 12px;
+    margin-left: 14px;
     display: flex; 
-    margin-left: 10px;
     justify-content: center;
+}
+.searchIcon span{ 
+    font-size: 20px;   
 }
 .searchInput{
     width: 320px;
     height: 20px;
-    font-size: 16px;
-    line-height: 20px; 
+    margin-left: 11px;     
     display: flex;
-    color: #9C9C9C;
+    justify-content: start;
+    color: rgb(131, 97, 97);
     border: none;    
     font-family: 'Roboto';  
     font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
 }
 .notificationIcon{
     width: 15px;
@@ -153,12 +159,11 @@
     height: 12px;
     position: absolute;
     background-color: #FF0000;
-    left: 10px;
+    left: 9px;
     top: -2px;
     border-radius: 50%;
     box-shadow: 0px 0px 4px rgba(255, 0, 0, 0.4);;
 }
-
 .projectType{
     width: 100%;
     height: 48px;
@@ -177,17 +182,19 @@
     height: 20px;    
     margin-top: 12px;
     margin-left: 8px;
-    background-color: white;  
-    font-size: 16px; 
+    background-color: white;     
     display: flex;
-    align-items: center;
-    letter-spacing: 0.0125em;
 }
 .activeDiv a{
     text-decoration: none;  
-    color: #212121;  
+       
+}
+.activeDiv span{
+    font-family: 'Roboto';
     font-weight: 500;
-    
+    font-size: 16px;
+    line-height: 20px;
+    color: #212121; 
 }
 
 .pending{
@@ -198,27 +205,32 @@
     display: flex;
     flex-direction: row;       
 }
-.pendingButton a{
-    text-decoration: none;
-    color: #6A6A6A;
-}
 .pendingButton{
     width: 124px;
     height: 20px;
     margin-top: 12px;
     margin-left: 8px; 
-    font-size: 16px;  
+}
+.pendingButton a{
+    text-decoration: none;
+}
+.pendingButton span{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
     line-height: 20px;
     color: #6A6A6A;
 }
+
 .pendingCounter{
     width: 24px;
     height: 24px;
     margin-top: 10px;
+    margin-left: 8px;
     background: #FF0000;
     border-radius: 50%;
-    box-shadow: 0px 0px 4px rgba(255, 0, 0, 0.4);
-    display: flex;
+    box-shadow: 0px 0px 4px rgba(255, 0, 0, 0.4);    
     justify-content: center;
     font-family: SF Pro Text;
     font-style: normal;
@@ -229,10 +241,139 @@
     align-items: center;
     color: #FFFFFF;
 }
+
 .content{
     width: 100%;
+    min-height: 862px;
     display: flex;
     background-color: #E5E5E5;
     flex-direction: column;
     font-size: 16px;
+}
+/*------viewPart-----*/
+
+.viewPart{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;    
+}
+.viewType{
+    width: 400px;
+    height: 36px;
+    margin-left: 20px;
+    margin-top: 24px;
+    background: #ECECEC;
+    border-radius: 8px;
+    display: flex;   
+    flex-direction: row;
+    align-items: center;
+}
+.exportDiv{
+    width: 101px;
+    height: 36px;    
+    margin-top: 26px;
+    margin-right:20px;
+    display: flex;
+    align-items: center;
+    border: 2px solid #CFD8DC;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+.expIcon{
+    margin-left: 10px;
+    font-size: 13px;
+}
+.exportDiv .text{    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #212121;
+    margin-left: 10px;
+}
+.gridView{
+    width: 91px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 8px;  
+    background: #569AFF;
+    border-style: none;
+}
+.gridIcon{
+    margin-left: 15px;
+}
+.gridIcon span{
+    color: white;
+}
+.gridText{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+.tableView{
+    width: 102px;
+    height: 36px;
+    display: flex;
+    flex-direction: row;
+    align-items:center ;    
+    justify-content: space-around;
+    border-radius: 8px;
+    background: #ECECEC;     
+    border-style: none;
+}
+.tableIcon{
+    width: 14.25px;
+    height: 13.5px;
+    display: flex;
+    align-items: center;
+}
+.tableText{
+    width: 48px;
+    height: 20px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;    
+    color: #212121;
+}
+.timelineIcon{
+    margin-left: 13px;
+}
+.timelineText{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    color: #212121;    
+    margin-left: 13px;    
+}
+.mapIcon{
+    width: 13px;
+    height: 13px;
+    display: flex;    
+    margin-left: 30px;
+}
+.mapText{
+    width: 34px;
+    height: 20px;  
+    font-family: 'Roboto';    
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: 10px;
 }
