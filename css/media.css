@@ -1,0 +1,78 @@
+
+@media screen and (max-width: 1200px){
+    
+    .projectData1-1 span,.projectData1-2 span,
+    .projectData1-3 span, .projectData1-4  span{     
+        font-size: 18px;  
+    }
+    .projectData1-1 p,.projectData1-2 p,
+    .projectData1-3 p, .projectData1-4  p{     
+        font-size: 11px;
+    }
+}
+@media screen and (max-width: 1024px){
+    
+    .projectData1-1 span,.projectData1-2 span,
+    .projectData1-3 span, .projectData1-4  span{     
+        font-size: 17px;  
+    }
+    .projectData1-1 p,.projectData1-2 p,
+    .projectData1-3 p, .projectData1-4  p{     
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width : 1024px){
+    .gridOne{
+        width: calc((100% - 40px)/2);
+    }
+}
+@media screen and (max-width : 850px) {
+    .searchProject{
+        width: 250px;
+    } 
+    
+}
+
+
+@media screen and (max-width : 768px) {
+    .projectData1-4{
+        display: none;
+    }
+    .createProject, .searchProject {
+        display: none;
+    }
+    .exportDiv{
+        display: none;
+    }
+    .sidebar{
+        display: none;
+    }
+    .main{
+        margin-left: 0;
+    }
+    .notificationIcon{        
+        margin-right: 18px;
+    }
+        
+    .redNotification{
+        right: 12px;
+        top: 16px;
+    }
+    .myProject{
+        display: none;
+    }
+    .myProject1{
+        display: flex;
+        margin-top: 12px;
+
+    }
+
+}
+
+
+@media screen and (max-width : 580px) {  
+    .gridOne{
+        width: calc((100% - 20px));
+    }
+}
