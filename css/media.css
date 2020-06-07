@@ -1,4 +1,3 @@
-
 @media screen and (max-width: 1200px){
     
     .projectData1-1 span,.projectData1-2 span,
@@ -39,33 +38,23 @@
     .projectData1-4{
         display: none;
     }
-    .createProject, .searchProject {
-        display: none;
-    }
     .exportDiv{
-        display: none;
-    }
-    .sidebar{
         display: none;
     }
     .main{
         margin-left: 0;
     }
-    .notificationIcon{        
-        margin-right: 18px;
-    }
-        
-    .redNotification{
-        right: 12px;
-        top: 16px;
-    }
-    .myProject{
+    .header{
         display: none;
     }
-    .myProject1{
-        display: flex;
-        margin-top: 12px;
-
+    .header1{
+        display: flex;   
+    }
+    .sidebar{
+        display: none;
+    }
+    .projectData2{    
+        width: 80%;
     }
 
 }
@@ -74,5 +63,5 @@
 @media screen and (max-width : 580px) {  
     .gridOne{
         width: calc((100% - 20px));
-    }
+    }    
 }
