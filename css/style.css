@@ -805,3 +805,7 @@
     max-width: 70px;
     overflow: hidden;
 }
+.contentForTable{
+    display: none;
+
+}

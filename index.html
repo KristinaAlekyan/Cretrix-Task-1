@@ -109,7 +109,7 @@
                 </div> 
                 <div class="viewPart">
                     <div class="viewType">                        
-                            <button class="gridView"> 
+                            <button class="gridView" onclick="changeContent(1)"> 
                                 <div class="gridIcon">
                                     <span class="material-icons">view_module</span>
                                 </div> 
@@ -118,7 +118,7 @@
                                 </div>        
                             </button> 
 
-                            <button class="tableView"> 
+                            <button class="tableView" onclick="changeContent(2)"> 
                                 <div class="tableIcon">
                                     <span class="material-icons">table_chart</span>
                                 </div>
@@ -145,8 +145,8 @@
                         <span class="text">Export</span>
                     </button>   
                 </div>
-                <!---  
-                <div class="contentForGrid">
+              
+                <div class="contentForGrid"  id="content1">
                     <div class="gridOne">
                         <div class="projectGrid">
                             <div class="projectGridLeft">
@@ -725,8 +725,8 @@
                     </div>
                     
                 </div> 
-            -->
-                <div class="contentForTable">
+
+                <div class="contentForTable" id="content2">
                     <div class="searchFil">
                         <div class="searchFilter">
                             <div class="searchFilterIcon">
@@ -834,6 +834,7 @@
             </div>   
         </div>
     </div>
+    <script src="index.js"></script>
      
 </body>
 </html>
