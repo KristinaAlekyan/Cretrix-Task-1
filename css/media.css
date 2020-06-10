@@ -8,6 +8,9 @@
     .projectData1-3 p, .projectData1-4  p{     
         font-size: 11px;
     }
+    .th11,.th10,.td11, .td10{
+        display: none;
+    }
 }
 @media screen and (max-width: 1024px){
     
@@ -19,17 +22,25 @@
     .projectData1-3 p, .projectData1-4  p{     
         font-size: 10px;
     }
-}
-
-@media screen and (max-width : 1024px){
     .gridOne{
         width: calc((100% - 40px)/2);
     }
+    .th6, .td6{
+        display: none;
+    }
+    .th3,.td3{
+        display: none;
+    }
+
 }
+
 @media screen and (max-width : 850px) {
     .searchProject{
         width: 250px;
     } 
+    .th4,.td4{
+        display: none;
+    }
     
 }
 
@@ -56,6 +67,13 @@
     .projectData2{    
         width: 80%;
     }
+    .th5,.td5{
+        display: none;
+    }
+    .th8,.td8{
+        display: none;
+    }
+     
 
 }
 
@@ -63,5 +81,26 @@
 @media screen and (max-width : 580px) {  
     .gridOne{
         width: calc((100% - 20px));
-    }    
+    }   
+    .th7,.td7{
+        display: none;
+    } 
+    .searchFil{
+        display: none;
+    }
+    .tableTh, .tableTd{
+        padding-left: 16px;
+    }
+    .th2, .td2{
+        flex:1;
+        min-width: 194px;
+        max-width: 200px;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width : 450px) { 
+    .th1,.td1{
+    display: none;
+    } 
 }

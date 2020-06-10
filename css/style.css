@@ -610,9 +610,9 @@
     display: flex;
     flex-direction: column;
     border:0.5px solid blue;
-    background: #FFFFFF;
     border: 1px solid #EAEDF0;
     box-sizing: border-box;
+    margin-top: 26px;
 }
 .searchFil{
     width: 100%;
@@ -620,6 +620,7 @@
     display: flex;
     padding: 10px 20px 10px 30px;
     justify-content: space-between;
+    background-color: #FFFFFF;;
 }
 .searchFilter{
     display: flex;
@@ -676,27 +677,26 @@
     display: flex;
     flex-direction: column;
 }
+
 .tableTh{    
-    width: 100%;
+    width: 100%;    
     height: 56px;
-    display: flex;
-    flex-direction: row;
+    display: flex;    
     justify-content: space-between;
     background: #FFFFFF;
     border: 1px solid #EAEDF0;     
-    padding: 18px 0 18px 32px;   
+    padding: 18px 0 18px 32px; 
 }
 .tableTd{
     width: 100%;
     height: 52px;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     background: #FFFFFF;
     border: 1px solid #EAEDF0;     
-    padding: 16px  0 16px 32px;   
+    padding: 16px  0 16px 32px; 
 }
-.tableTh span{
+.th{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -706,7 +706,14 @@
     align-items: center;
     color: #000000;
 }
-.tableTd span{
+
+.th1{
+    display: flex;
+}
+.th1 .material-icons{
+    color: #9C9C9C;
+}
+.td{
     font-family: 'Roboto'; 
     font-style: normal;
     font-weight: normal;
@@ -716,8 +723,7 @@
     align-items: center;
     color: #212121;
 }
-
-.tdName>span{
+.tdName .td{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -725,5 +731,77 @@
     line-height: 20px;
     display: flex;
     align-items: center;
-    color: #000000;
+    color: #000000;    
+}
+
+.tableTh div{
+    flex:1; 
+    height: 20px;   
+}
+.tableTd div{
+    flex:1;
+    height: 20px;
+}
+.th1, .td1{
+    flex:1;    
+    min-width: 45px;
+    max-width: 35px;
+}
+.th2, .td2{
+    flex:1;
+    min-width: 260px;
+    max-width: 270px;
+    overflow: hidden;
+}
+.th3, .td3{
+    flex:1;
+    min-width: 88px;
+    max-width: 100px;
+    overflow: hidden;
+}
+.th4, .td4{
+    flex:1;
+    min-width: 65px;
+    max-width: 75px;
+    overflow: hidden;
+}
+.th5, .td5{
+    flex:1;
+    min-width: 107px;
+    max-width: 115px;
+    overflow: hidden;
+}
+.th6, .td6{
+    flex:1;
+    min-width: 105px;
+    max-width: 115px;
+    overflow: hidden;
+}
+.th7, .td7{
+    flex:1;
+    min-width: 91px;
+    max-width: 95px;
+    overflow: hidden;
+}
+.th8, .td8{
+    flex:1;
+    min-width: 91px;
+    max-width: 95px;
+    overflow: hidden;
+}
+.th9, .td9{
+    flex:1;
+    min-width: 102px;
+    max-width: 110px;
+    overflow: hidden;
+}
+.th10, .td10{
+    flex:1;
+    max-width: 70px;
+    overflow: hidden;
+}
+.th11, .td11{
+    flex:1;
+    max-width: 70px;
+    overflow: hidden;
 }
