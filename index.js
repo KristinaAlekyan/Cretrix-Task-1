@@ -17,10 +17,10 @@ function changeContent(view){
 }
 
 
-let activePendingToggled=document.getElementById("content1");
 function changeActiveToPending(view){
     let result = "content" + view.toString();
     let x = document.getElementById(result);
+    let z = document.getElementsByClassName(result);
   
   if (previouslyToggled && previouslyToggled !== x) {
     previouslyToggled.style.display = "none"; 

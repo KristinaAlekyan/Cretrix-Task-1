@@ -1,24 +1,25 @@
-@media screen and (max-width: 1200px){
-    
-    .projectData1-1 span,.projectData1-2 span,
-    .projectData1-3 span, .projectData1-4  span{     
+@media screen and (max-width: 1200px){    
+    .projectData1-1 span, .projectData1-2 span,
+    .projectData1-3 span, .projectData1-4 span{     
         font-size: 18px;  
     }
-    .projectData1-1 p,.projectData1-2 p,
+    .projectData1-1 p, .projectData1-2 p,
     .projectData1-3 p, .projectData1-4  p{     
         font-size: 11px;
     }
     .th11,.th10,.td11, .td10{
         display: none;
     }
+    .projectPendingData1{
+        width: 100%;
+    }
 }
 @media screen and (max-width: 1024px){
-    
-    .projectData1-1 span,.projectData1-2 span,
+    .projectData1-1 span, .projectData1-2 span,
     .projectData1-3 span, .projectData1-4  span{     
         font-size: 17px;  
     }
-    .projectData1-1 p,.projectData1-2 p,
+    .projectData1-1 p, .projectData1-2 p,
     .projectData1-3 p, .projectData1-4  p{     
         font-size: 10px;
     }
@@ -30,26 +31,39 @@
     }
     .th3,.td3{
         display: none;
+    } 
+    .exportDiv{
+        display: none;
     }
-
+    .searchProject{
+        width: 343px;
+    } 
+    .searchInput{
+        width: 263px;
+    }    
+    .gridPendingOne{
+        width: calc((100% - 40px)/2);
+    }   
+    .gridPendingTwo{
+        width: calc((100% - 40px)/2);
+    }
 }
 
 @media screen and (max-width : 850px) {
-    .searchProject{
-        width: 250px;
-    } 
+    
     .th4,.td4{
         display: none;
     }
-    
+    .viewPart{
+        flex-direction: column-reverse;
+    }
+    .searchProject{
+        margin-top: 20px;
+    }    
 }
-
 
 @media screen and (max-width : 768px) {
     .projectData1-4{
-        display: none;
-    }
-    .exportDiv{
         display: none;
     }
     .main{
@@ -72,16 +86,13 @@
     }
     .th8,.td8{
         display: none;
-    }
-     
-
+    }   
 }
-
 
 @media screen and (max-width : 580px) {  
     .gridOne{
         width: calc((100% - 20px));
-    }   
+    }      
     .th7,.td7{
         display: none;
     } 

@@ -56,15 +56,9 @@
                             <span class="material-icons">add_circle</span>
                         </div>                          
                         <div class="createText">
-                            <span>Create project</span>
+                            <span>Create new project</span>
                         </div>                            
                     </button>
-                    <div class="searchProject">
-                        <div class="searchIcon">
-                            <span class="material-icons">search<span>
-                        </div>            
-                        <input type="search" class="searchInput" placeholder="Search projects by name">
-                    </div>
                     
                     <div class="notificationIcon">
                         <span class="material-icons">notifications</span>
@@ -74,39 +68,58 @@
                 </div>                                         
             </div>
             <div class="header1">                 
-                <div class="myProject1">
+                <div class="myProject1Left">
                     <div class="myProject1Icon">
-                        <span class="material-icons">reorder</span>
+                        <img src="images/header1.svg" />
                     </div>
                     <div class="myProject1Text1">
                         <span>Projects</span>
                     </div>   
-                </div>                   
-                <div class="notificationIcon1">
-                    <span class="material-icons">notifications</span>
-                    <div class="redNotification1">                        
-                    </div>
-                </div>                                         
+                </div>
+                <div class="myProject1Right">
+                    <button class="create1Project"> 
+                        <div class="createIcon" >
+                            <span class="material-icons">add_circle</span>
+                        </div>                          
+                        <div class="create1Text">
+                            <span>New</span>
+                        </div>                            
+                    </button>                   
+                    <div class="notificationIcon1">
+                        <span class="material-icons">notifications</span>
+                        <div class="redNotification1">                        
+                        </div>
+                    </div>                                         
+                </div>
             </div>
     
             <div class="content">
                 <div class="projectType">
-                    <button class="active" onclick="changeActiveToPending(1)">
+                    <button class="active" ">
                         <a><span>Active projects . 112</span></a>
-                    </button>
-    
-                    <button class="pending" onclick="changeActiveToPending(3)">                       
+                    </button>    
+                    <button class="pending" ">                       
                             <div class="pendingButton"> <a href="#"></a><span>Pending projects </a></span>
                             </div>
                             <div class="pendingCounter">
                                 2
-                            </div> 
-                                                                          
+                            </div>                                                                           
                     </button>
                 </div> 
-                <div class="viewPart">
-                    <div class="viewType">                        
-                            <button class="gridView" onclick="changeContent(1)"> 
+                <div class="viewPart">                    
+                    <div class="searchProject">
+                        <div class="searchIcon">
+                            <span class="material-icons">search<span>
+                        </div>            
+                        <input type="search" class="searchInput" placeholder="Search projects">
+                    </div>
+                    <div class="viewRight">
+                        <button class="exportDiv" >
+                            <span class="material-icons expIcon"> save_alt</span>
+                            <span class="text">Export</span>
+                        </button>
+                        <div class="viewType">                        
+                            <button class="gridView" > 
                                 <div class="gridIcon">
                                     <span class="material-icons">view_module</span>
                                 </div> 
@@ -115,7 +128,7 @@
                                 </div>        
                             </button> 
 
-                            <button class="tableView" onclick="changeContent(2)"> 
+                            <button class="tableView" > 
                                 <div class="tableIcon">
                                     <span class="material-icons">table_chart</span>
                                 </div>
@@ -136,11 +149,9 @@
                             <div class="mapText">
                                 <span>Map</span>
                             </div>     
-                    </div>
-                    <button class="exportDiv" >
-                        <span class="material-icons expIcon"> save_alt</span>
-                        <span class="text">Export</span>
-                    </button>   
+                    </div> 
+                        
+                    </div>                
                 </div>
               
                 <div class="contentForGrid"  id="content1">
@@ -861,7 +872,7 @@
 
                          </div>             
                     </div> 
-                    <div class="gridPendingOne">
+                    <div class="gridPendingTwo">
                         <div class="projectPendingGrid">
                             <div class="gridPendingIcon0">
                                 <div class="gridPendingIcon1">
@@ -920,10 +931,10 @@
                              </div>
                              <div class="projectPendingData3-2">
                                  <button class="projectPendingData3-btn1">
-                                     <span>Join</span>
+                                     <span>Resend</span>
                                  </button>
                                  <button class="projectPendingData3-btn2">
-                                    <span>Deny</span>
+                                    <span>Undo</span>
                                 </button>
 
                              </div>
