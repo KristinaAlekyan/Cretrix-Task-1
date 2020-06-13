@@ -42,10 +42,10 @@
         width: 263px;
     }    
     .gridPendingOne{
-        width: calc((100% - 40px)/2);
+        width:calc((100% - 40px)/2); 
     }   
     .gridPendingTwo{
-        width: calc((100% - 40px)/2);
+        width:calc((100% - 40px)/2); 
     }
 }
 
@@ -79,7 +79,7 @@
         display: none;
     }
     .projectData2{    
-        width: 80%;
+        width: 90%;
     }
     .th5,.td5{
         display: none;
@@ -107,6 +107,12 @@
         min-width: 194px;
         max-width: 200px;
         overflow: hidden;
+    }     
+    .gridPendingOne{
+        width:calc(100% - 20px); 
+    }   
+    .gridPendingTwo{
+        width:calc(100% - 20px); 
     }
 }
 
