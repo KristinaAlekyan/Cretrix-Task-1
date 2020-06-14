@@ -47,6 +47,9 @@
     .gridPendingTwo{
         width:calc((100% - 40px)/2); 
     }
+    .gridPendingJoined{
+        width:calc((100% - 40px)/2); 
+    }
 }
 
 @media screen and (max-width : 850px) {
@@ -86,7 +89,18 @@
     }
     .th8,.td8{
         display: none;
-    }   
+    }  
+    .projectPendingMessage{
+        width: 343px;
+    }
+    .projectPendingMessage1{        
+        width: 230px;
+    }
+    .projectPendingMessage{
+        align-self: center;
+        margin-right: 0px;
+    }
+    
 }
 
 @media screen and (max-width : 580px) {  
@@ -112,6 +126,9 @@
         width:calc(100% - 20px); 
     }   
     .gridPendingTwo{
+        width:calc(100% - 20px); 
+    }
+    .gridPendingJoined{
         width:calc(100% - 20px); 
     }
 }
