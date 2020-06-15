@@ -1,4 +1,11 @@
 
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -302,6 +309,7 @@
 }
 .content{  
     width: 100%;
+    height: 100%;
     margin-top: 56px;
     display: flex;
     background-color: #E5E5E5;
@@ -487,7 +495,7 @@
     display: flex; 
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     background: #E5E5E5;
     padding: 18px 10px 0 10px;
@@ -724,14 +732,27 @@
 /*----Pending ---Grid  ---*/
 .contentForPendingGrid{
     width: 100%;
+    height: 100%;
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.denoy{
+    width: 100%;
+    height: 100%;
+    background: #F5F6F6;
+    opacity: 0.7;
+}
+.contentForPendingWithMessage{
+    width: 100%;    
     margin-top: 20px;
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: start;
     align-items: center;
+    justify-content: center;
     background: #E5E5E5;
-    padding: 18px 10px 0 10px;
+    padding: 0 10px;
 }
 .gridPendingOne{     
     width:calc((100% - 60px)/3); 
