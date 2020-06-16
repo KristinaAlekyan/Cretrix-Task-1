@@ -15,3 +15,10 @@ function changeContent(view){
   }  
   previouslyToggled = x;
 }
+
+
+let modal = document.getElementById("myModal");
+let btn = document.getElementById("deny");
+btn.onclick = function() {
+  modal.style.display = "block";
+}
