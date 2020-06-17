@@ -19,6 +19,11 @@ function changeContent(view){
 
 let modal = document.getElementById("myModal");
 let btn = document.getElementById("deny");
-btn.onclick = function() {
+btn.onclick = function(){
   modal.style.display = "block";
 }
+
+
+
+
+

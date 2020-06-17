@@ -1339,7 +1339,6 @@ body{
     border: none;
     background: #FFFFFF;
 }
-
 .denyActionDeny{
     border: none;
     margin-left: 24px;
@@ -1356,7 +1355,6 @@ body{
     text-align: center;
     color: #9C9C9C;
 }
-
 .denyActionDeny span{
     font-family: 'Roboto';
     font-style: normal;
@@ -1368,4 +1366,74 @@ body{
     text-align: center;
     color: #FF0000;
 }
- 
+
+/*-----createProjectModal-----*/
+.createProjectModal{
+    display: none;
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(245,246,246,0.7);
+}
+.createProjectModal-content{  
+    width: 771px;
+    height: 1078px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #FFFFFF;
+    box-shadow: 2px 4px 24px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    margin: 44px auto; 
+    padding-top: 18px;
+}
+.createNewProject1{
+    width: 100%;
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #EAEDF0;
+} 
+.createNewProject1-1{      
+    margin-left: 20px;    
+}
+.createNewProject1-1 span{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;  
+}
+.createNewProject1 .material-icons{
+    font-size: 13px;
+    margin-top: 3px ;
+    margin-right: 21px;
+}
+.createNewProject2{
+    width: 100%;
+    height: 56px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    padding: 20px;
+}
+.createNewProject2-1{  
+    width: 424px; 
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #569AFF;
+    border-radius: 4px;
+    padding: 7px 16px 11px 14px ;
+}
+.createNewProject2-1 span{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #569AFF;
+}
